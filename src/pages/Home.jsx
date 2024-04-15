@@ -21,7 +21,8 @@ const Home = () => {
                 const response = await axios.get("https://api-elian-app.vercel.app/api/v1/user/dashboard",{
                     withCredentials:true,
                     headers:{
-                        Authorization:`Bearer ${token}`
+                        Authorization:`Bearer ${token}`,
+                        
                     }
                 })
                 axios.defaults.withCredentials = true

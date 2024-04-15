@@ -4,5 +4,12 @@
             "source": "/(.*)",
             "destination": "/"
         }
+    ],
+    "routes":[
+        {
+            "headers":{
+                "Access-Control-Allow-Credentials":"true"
+            }
+        }
     ]
 }
