@@ -16,7 +16,7 @@ const Login = () => {
     }
     const handleLogin = async(e) => {
         e.preventDefault()
-        const {data} = await axios.post("http://localhost:5000/api/v1/auth/login",{email,password},
+        const {data} = await axios.post("https://api-elian-app.vercel.app/api/v1/auth/login",{email,password},
         {
             withCredentials:true,
             headers:{ 

@@ -18,7 +18,7 @@ const Home = () => {
                 console.log(cookies);
                 // if(cookies){
                     // }
-                const response = await axios.get("http://localhost:5000/api/v1/user/dashboard",{
+                const response = await axios.get("https://api-elian-app.vercel.app/api/v1/user/dashboard",{
                     withCredentials:true,
                     headers:{
                         Authorization:`Bearer ${token}`
@@ -35,7 +35,7 @@ const Home = () => {
     },[cookies])
 
     const handleLogout = () => {
-        axios.post('http://localhost:5000/api/v1/auth/logout',{
+        axios.post('https://api-elian-app.vercel.app/api/v1/auth/logout',{
             withCredentials:true,
             headers:{
                 Authorization:`Bearer ${token}`
