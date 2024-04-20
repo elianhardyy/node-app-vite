@@ -27,8 +27,8 @@ const Home = () => {
                 })
                 axios.defaults.withCredentials = true
                 axios.defaults.headers.common.Authorization = `Bearer ${cookies.accessToken}`
-                console.log(response.data.data.username)
-                setUser(response.data.data.username)
+                console.log(response.data.data)
+                setUser(response.data.data)
             } catch (error) {
                 console.log(error);
             }
@@ -49,7 +49,7 @@ const Home = () => {
     }
   return (
     <div>
-        hello {user}
+        hello {user.username}
         <button onClick={handleLogout} className='bg-red-500 w-[100px] h-[100px] p-2'>Logout</button>
     </div>
   )
