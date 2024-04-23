@@ -13,6 +13,7 @@
     "axios": "^1.6.8",
     "firebase": "^10.11.0",
     "mqtt": "^5.5.3",
+    "paho-mqtt": "^1.1.0",
     "react": "^18.2.0",
     "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",
